@@ -1,0 +1,8 @@
+name: ExplodingSheep
+main: me.RabidCrab.ExplodingSheep.ExplodingSheep
+version: 1.0
+author: RabidCrab
+commands:
+    esheep:
+        description: Exploding sheep options
+        usage: /esheep
