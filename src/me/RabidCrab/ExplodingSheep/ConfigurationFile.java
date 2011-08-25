@@ -30,8 +30,8 @@ public class ConfigurationFile extends YMLFile
     {
         
         // application information I'll need eventually for updates and whatnot
-        super.configurationFile.setProperty("explodingsheep.application.files.config.Version", "0.1");
-        super.configurationFile.setProperty("explodingsheep.application.Version", "0.1");
+        super.configurationFile.setProperty("explodingsheep.application.files.config.Version", "1.1");
+        super.configurationFile.setProperty("explodingsheep.application.Version", "1.1");
         
         // Settings with no embedding
         super.configurationFile.setProperty("explodingsheep.default.SheepExplode", true);
@@ -49,8 +49,9 @@ public class ConfigurationFile extends YMLFile
         List<String> generalCommandsHelp = new ArrayList<String>();
         
         generalCommandsHelp.add(ChatColor.GREEN + "/esheep " + ChatColor.LIGHT_PURPLE + "[enable/disable]" + ChatColor.WHITE + " - Enables/disables the sheep to explode");
-        generalCommandsHelp.add(ChatColor.GREEN + "/esheep " + ChatColor.LIGHT_PURPLE + "[enable/disable]" + ChatColor.WHITE + " - Toggles the sheep leaping towards their killer.");
+        generalCommandsHelp.add(ChatColor.GREEN + "/esheep leap " + ChatColor.LIGHT_PURPLE + "[enable/disable]" + ChatColor.WHITE + " - Toggles the sheep leaping towards their killer.");
         generalCommandsHelp.add(ChatColor.GREEN + "/esheep radius " + ChatColor.LIGHT_PURPLE + "[1-10]" + ChatColor.WHITE + " - Sets the radius of explosion.");
+        generalCommandsHelp.add(ChatColor.GREEN + "/esheep explodechance " + ChatColor.LIGHT_PURPLE + "[1-100]" + ChatColor.WHITE + " - Sets the explosion percentage of sheep. 100 makes the sheep blow up every time.");
         
         super.configurationFile.setProperty("explodingsheep.help.GeneralCommands", generalCommandsHelp);
         super.configurationFile.setProperty("explodingsheep.help.GeneralHelpNotFound", "No help list found.");
